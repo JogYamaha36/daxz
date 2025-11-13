@@ -1,0 +1,128 @@
+/* Основні стилі */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f8fd;
+  color: #222;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* Хедер */
+header {
+  background: linear-gradient(90deg, #005bbb, #0074d9);
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Фото школи */
+.photo img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 4px solid #0074d9;
+}
+
+/* Основний блок */
+main {
+  background: white;
+  margin-top: -20px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 12px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Заголовки */
+h2 {
+  color: #005bbb;
+  border-left: 6px solid #005bbb;
+  padding-left: 10px;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+/* Вчителі */
+.teachers ul {
+  list-style: none;
+  padding: 0;
+}
+
+.teachers li {
+  background: #e8f1ff;
+  margin: 6px 0;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border-left: 4px solid #0074d9;
+  transition: 0.3s;
+}
+
+.teachers li:hover {
+  background: #d5e7ff;
+  transform: translateX(4px);
+}
+
+/* Учні */
+.students-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.students-list li {
+  background: #f0f6ff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #d7e5ff;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.students-list li:hover {
+  background: #dcecff;
+  transform: scale(1.05);
+}
+
+/* Футер */
+footer {
+  background: linear-gradient(90deg, #0074d9, #005bbb);
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 50px;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+}
+
+footer .footer-content p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+footer .footer-content p:last-child {
+  font-style: italic;
+  opacity: 0.9;
+}
